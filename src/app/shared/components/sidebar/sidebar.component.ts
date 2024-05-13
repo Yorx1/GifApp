@@ -19,15 +19,15 @@ export class SidebarComponent {
     return this.gifsService.tagsHistory
   }
 
+  selectedGif(tag: string): void {
+    if (this.gifsService.tagsHistory.length != 0) {
+      this.gifsService.searchTag(this.tagHistory[0])
+    }
 
+    this.gifsService.searchTag(tag)
 
-  selectedGif(tag: string) {
-      if(this.gifsService.tagsHistory.length != 0){
-        this.gifsService.searchTag(this.tagHistory[0])
-      }
-
-      this.gifsService.searchTag(tag)
-
-
+  }
+  deleteSearch(tag: string): void {
+    this.gifsService.deleteTag(tag)
   };
 }

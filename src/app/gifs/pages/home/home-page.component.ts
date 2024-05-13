@@ -5,6 +5,7 @@ import { Gif } from '../../interfaces/gifs.interfaces';
 @Component({
   selector: 'home-page',
   templateUrl: './home-page.component.html',
+  styleUrl: './home-page.component.css',
 
 })
 export class HomePageComponent {
@@ -13,9 +14,7 @@ export class HomePageComponent {
 
   }
 
-
   get gifs(): Gif[]{
-
     return this.gifsService.gifsList
   }
 

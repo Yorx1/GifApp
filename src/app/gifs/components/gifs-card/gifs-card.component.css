@@ -1,0 +1,11 @@
+
+.card{
+  display: block;
+  outline: 2 px solid #fff;
+  height: auto;
+  margin: 10px;
+  width: 320px;
+}
+.card-body{
+  color: #fff;
+}
